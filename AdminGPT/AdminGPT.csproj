@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>AdminGPT</Title>
+    <Version>1.0.1</Version>
+    <Authors>JensCaasen</Authors>
+    <Description>Get GPT-4 assist in executing Bash, PowerShell and Microsoft Graph tasks. Make OpenAI your inhouse consultant with this library.</Description>
+    <PackageProjectUrl>https://github.com/Jenscaasen/AdminGPT</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Jenscaasen/AdminGPT</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>chatgpt;gpt-4;automation;chat;administration</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenAI" Version="1.7.2" />
+  </ItemGroup>
+
+</Project>

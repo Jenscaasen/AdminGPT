@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminGPT", "AdminGPT\AdminGPT.csproj", "{7F501DE0-64AE-4731-8122-023CB8742FA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminGPTClientExamples", "AdminGPTClient\AdminGPTClientExamples.csproj", "{32FCEFDF-580B-4F01-BFC5-1D199F4BC063}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F501DE0-64AE-4731-8122-023CB8742FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F501DE0-64AE-4731-8122-023CB8742FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F501DE0-64AE-4731-8122-023CB8742FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F501DE0-64AE-4731-8122-023CB8742FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32FCEFDF-580B-4F01-BFC5-1D199F4BC063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32FCEFDF-580B-4F01-BFC5-1D199F4BC063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32FCEFDF-580B-4F01-BFC5-1D199F4BC063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32FCEFDF-580B-4F01-BFC5-1D199F4BC063}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA558EAF-AEB7-440D-A072-A2C1B2FFEA83}
+	EndGlobalSection
+EndGlobal
