@@ -17,17 +17,20 @@ The Solution is build with the "Human in the loop" in mind. Every line of script
 
 # How to use
 First, make a instance of AdminGPTBot
-
+```
 AdminGPTBot adminBot = new AdminGPTBot(apiKey);
+```
 The apiKey is the apiKey of OpenAI.
 
 Next, call the Start() method. This takes 2 parameters: a command (for example: "search and enable the user peter123") and a technology. At the moment, that can be Linux_SSH (Bash), PowerShell and Microsoft_Graph.
 
 Make sure to cast the result into the appropriate technology you chose, for example:
+```
 LinuxWhatToRunSuggestion suggestion = (LinuxWhatToRunSuggestion)adminBot.Start("make sure my script called '1.sh' is started every 5 min", AdminGptTechnology.LINUX_SSH);
+```
 
 This suggestion now is eigther a UserPrompt or a ExecutionSuggestion. This is determined by the "SuggestionType". You can handle it like this, for example:
-
+```
 if (suggestion.SuggestionType == SuggestionType.Run)
                 {
                     var systemResult = ExecuteSuggestion(suggestion);                   
@@ -38,7 +41,8 @@ if (suggestion.SuggestionType == SuggestionType.Run)
                     Console.Write("You: ");
                     string userInput = Console.ReadLine();                 
                 }
-              
+```
+    
 This makes sure that when AdminGPT has a question for you, you can give an input.
 
 If its not a UserPrompt, a SuggestedBashPrompt is provided. Ask the user if he/she wants that and give the result of the prompt back to AdminGPT.
