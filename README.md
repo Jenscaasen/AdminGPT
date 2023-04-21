@@ -16,6 +16,11 @@ The Solution is build with the "Human in the loop" in mind. Every line of script
 (coming soon)
 
 # How to use
+Install the Module with 
+```
+Install-Package AdminGPT -Version 0.2.0-pre-release
+```
+
 First, make a instance of AdminGPTBot
 ```
 AdminGPTBot adminBot = new AdminGPTBot(apiKey);
@@ -49,9 +54,14 @@ If its not a UserPrompt, a SuggestedBashPrompt is provided. Ask the user if he/s
 For this, there is a "UserResult" class, which contains 2 fields: ActualPrompt and ResultText.
 ActualPrompt is the prompt that was executed, or the question that was asked to the user. The User could also alter the prompt, but make sure to give the altered prompt back using the UserResult object, so everyone is on the same page.
 
+After you ran the suggestion or answered a query from AdminGPT you can use the "Next" method in a loop as long as you'd like. 
+
+# What to do with suggestions
+It is up to you how to use the suggestions. The example project uses https://github.com/mmacagno/SSH.NET to handle SSH suggestions, and HttpClient to handle Graph suggestions. For PowerShell, you can use the https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.powershell?view=powershellsdk-7.3.0 class.
+
 # Known Issues
--GPT-4 sometimes does not handle JSON correctly or does not understand his own choice of parameters, and gives up. To circumvent this, try again  
--In some complex scenarios, especially with filters, the documentation on how Graph works is different from how it actually works, and GPT-4 only knows what was written in the official documentation (which is wrong sometimes regarding Microsoft Graph)
+- GPT-4 sometimes does not handle JSON correctly or does not understand his own choice of parameters, and gives up. To circumvent this, try again  
+- In some complex scenarios, especially with filters, the documentation on how Graph works is different from how it actually works, and GPT-4 only knows what was written in the official documentation (which is wrong sometimes regarding Microsoft Graph)
 
 # Contributions
 Pull requests welcome. Since Graph is a vast area, more complex and different graph tasks need to be tested, and the code needs to be made self-loop ready
