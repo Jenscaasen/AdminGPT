@@ -74,5 +74,21 @@ It is up to you how to use the suggestions. The example project uses https://git
 - GPT-4 sometimes does not handle JSON correctly or does not understand his own choice of parameters, and gives up. To circumvent this, try again  
 - In some complex scenarios, especially with filters, the documentation on how Graph works is different from how it actually works, and GPT-4 only knows what was written in the official documentation (which is wrong sometimes regarding Microsoft Graph)
 
+# What is the difference between GraphGPT and AdminGPT?
+GraphGPT is a one-Shot system that is easier to integrate with just 2 HTTP calls, while AdminGPT requires continuous human feedback. 
+
+Use GraphGPT when:
+- you want to deploy the service right away
+- you want to have the graph commands executed for you
+- you have a simpler use case that does not require extensive user feedback based on the ongoing process, like automatic error handling
+- good for quick integration into HTTP enabled Chatbots due to cloud native nature
+
+Use AdminGPT when:
+- you want to integrate a prompt-and-response system into an existing software
+- you want to cover more complex scenarios that require more error handling and more user input
+- you can run the lib locally or introduced into a cloud service
+- you want to cover bash or powershell
+- you want even more control over the used token in graph
+
 # Contributions
 Pull requests welcome. Since Graph is a vast area, more complex and different graph tasks need to be tested, and the code needs to be made self-loop ready
