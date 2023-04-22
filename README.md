@@ -1,6 +1,13 @@
 # AdminGPT
 This repository aims to translate unstructured commands, that can be fulfilled by Microsoft Graph, Linux Bash or PowerShell, into a single- or multistep process of execution. For example: you can get the command "Enable the user peter.parker@newspaper.io in azure AD" from a software, bot or workflow, and let AdminGPT guide you through the whole process, including automated error handling.
 
+In theory, this works 
+- with all Graph Commands you can execute with HTTP
+- all PowerShell Commands with all PowerShell Modules (SharePointPNP, Exchange and more) 
+- all Bash Commands with all shell based software that is running on a linux system
+
+If you are looking for a Minecraft AdminGPT, thats here: https://github.com/Technoguyfication/AdminGPT. If you are looking for the Salesforce AdminGPT, thats here: https://www.admingpt.ai/. This repository is not associated with any of those.
+
 # Human in the loop
 The Solution is build with the "Human in the loop" in mind. Every line of script or REST command is a suggestion. It is up to the user to execute them. The suggested commands or HTTP requests can be directly piped into a PowerShell session, a SSH session or called with a HTTPClient.
 
@@ -13,7 +20,11 @@ The Solution is build with the "Human in the loop" in mind. Every line of script
 
 # Demo
 
-(coming soon)
+Graph:
+
+https://user-images.githubusercontent.com/8245848/233773996-d4ddb80f-c1b5-48ab-96d4-f4d09c2b810c.mp4
+
+
 
 # How to use
 Install the Module with 
